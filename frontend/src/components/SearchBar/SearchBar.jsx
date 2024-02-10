@@ -13,6 +13,12 @@ const SearchBar = () => {
       }
     };
 
+    const handleSearchOnClick=()=>{
+      if (query.length > 0){
+        navigate(`/search/${query}`);
+      }
+    }
+
   return (
     
        <div className="search-container">
@@ -24,7 +30,7 @@ const SearchBar = () => {
                     onChange={(e)=>setQuery(e.target.value)}
                     onKeyUp={handleSearch}
                 />
-                 <div className="search-icon" onClick={handleSearch}>
+                 <div className="search-icon" onClick={handleSearchOnClick}>
                      <FaSearch />
                   </div>
             </div>
