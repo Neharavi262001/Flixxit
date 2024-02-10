@@ -31,5 +31,5 @@ const authSlice=createSlice({
     }
 })
 
-export const {setCredentials,clearCredentials } =authSlice.actions
+export const {setCredentials,clearCredentials,checkToken } =authSlice.actions
 export default authSlice.reducer
