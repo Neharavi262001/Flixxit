@@ -47,8 +47,8 @@ const checkoutSession = asyncHandler(async (req, res) => {
       ],
 
       mode: 'subscription',
-      success_url: 'http://localhost:3000', 
-      cancel_url: 'http://localhost:3000/subscribe', 
+      success_url: 'http://localhost:5173', 
+      cancel_url: 'http://localhost:5173/subscribe', 
       
       customer: user.stripeCustomerId
       
