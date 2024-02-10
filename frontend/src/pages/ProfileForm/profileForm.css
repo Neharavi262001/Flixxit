@@ -1,0 +1,11 @@
+.profile-form h1{
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+}
+.profile-form button{
+    background-color:#e50914;
+}
+.profile-form button:hover{
+    background-color: #b2070a;
+}

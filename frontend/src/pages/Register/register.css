@@ -1,0 +1,80 @@
+.register{
+    color :white;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(77deg, rgba(14,14,14,1) 34%, rgba(110,7,7,1) 81%, rgba(177,9,9,1) 98%);
+    background-size: cover;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    padding:  20px;
+}
+.btn-block{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    
+}
+
+.btn-block a{
+    color: white;
+    text-decoration: none;
+}
+
+.form{
+   
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    border:1px solid black;
+    margin: 1.5% 40%;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-group a{
+    color: black;
+    font-weight: bold;
+}
+
+.form-group input{
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

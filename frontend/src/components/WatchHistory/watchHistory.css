@@ -1,0 +1,6 @@
+.watchHistory-container{
+    display: flex;
+    flex-direction: grid;
+   align-items: center;
+   margin: 2rem;
+}

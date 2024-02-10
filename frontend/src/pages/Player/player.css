@@ -1,0 +1,38 @@
+.hidden {
+    display: none;
+  }
+  .control-btns{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-player-container {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+
+  }
+
+  .skip-intro-checkbox {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  
+.quality-btn {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
