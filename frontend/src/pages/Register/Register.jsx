@@ -51,8 +51,8 @@ const Register = () => {
         </div>
         <div className="login-container">
             <div className="heading">
-                <h1>Unlimited movies, TV shows and more.</h1>
-                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h1>Boundless Entertainment Awaits</h1>
+                <h2>Stream Anywhere, Anytime!</h2>
             </div>
             <div className="form">
                  <div className="form-group">
