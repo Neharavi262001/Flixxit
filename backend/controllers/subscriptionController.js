@@ -47,8 +47,8 @@ const checkoutSession = asyncHandler(async (req, res) => {
       ],
 
       mode: 'subscription',
-      success_url: 'http://localhost:5173', 
-      cancel_url: 'http://localhost:5173/subscribe', 
+      success_url: 'https://flixxit-zeta.vercel.app/', 
+      cancel_url: 'https://flixxit-zeta.vercel.app/subscribe', 
       
       customer: user.stripeCustomerId
       
