@@ -1,12 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const storedToken = localStorage.getItem('token');
-
 const initialState={
     userInfo:localStorage.getItem('userInfo')
     ? JSON.parse(localStorage.getItem('userInfo'))
     : null,
-   
+    //token:null
     
 }
 
@@ -22,14 +20,8 @@ const authSlice=createSlice({
             state.userInfo=null,
             localStorage.removeItem('userInfo')
         },
-        checkToken: (state) => {
-            const storedToken = localStorage.getItem('token');
-            if (storedToken) {
-              state.userInfo = { token: storedToken };
-            }
-          },
     }
 })
 
-export const {setCredentials,clearCredentials,checkToken } =authSlice.actions
+export const {setCredentials,clearCredentials } =authSlice.actions
 export default authSlice.reducer

@@ -24,7 +24,6 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import SearchBar from './components/SearchBar/SearchBar';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 
-import {checkToken} from '../src/redux/auth/authSlice'
 
 const App = () => {
     const dispatch=useDispatch()
@@ -65,15 +64,13 @@ const App = () => {
 
   }
 
-  const initialiseApp=async()=>{
-    await dispatch(checkToken())
-  }
+
 
   useEffect(() => {
 
     fetchConfig();
     fetchGenresData()
-    initialiseApp()
+
     
   }, [dispatch]);
 

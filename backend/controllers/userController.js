@@ -36,14 +36,13 @@ const loginUser=asyncHandler(async(req,res)=>{
 
         if (hasActiveSubscription) {
 
-        const token=  generateToken(user._id)
+          generateToken(res,user._id)
 
         res.status(201).json({
           _id: user._id,
           name: user.name,
           email: user.email,
           hasActiveSubscription: true,
-          token
         });
       } else {
         res.status(201).json({
@@ -101,13 +100,12 @@ const registerUser=asyncHandler(async(req,res)=>{
 
 
     if (user){
-       const token = generateToken(user._id)
+        generateToken(res,user._id)
         res.status(201).json({
             _id:user._id,
             name:user.name,
             email:user.email,
-            stripeCustomerId:customer.id,
-            token
+            stripeCustomerId:customer.id
         })
     }else{
         res.status(400)
@@ -118,10 +116,10 @@ const registerUser=asyncHandler(async(req,res)=>{
 })
 
 const logoutUser=asyncHandler(async(req,res)=>{
-  //  res.cookie('jwt','',{
-  //   httpOnly:true,
-  //   expires:new Date(0)
-  //  })
+   res.cookie('jwt','',{
+    httpOnly:true,
+    expires:new Date(0)
+   })
    res.status(200).json({message:"Logged out successfully"})
 })
 
@@ -174,14 +172,13 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       (subscription) => subscription.status === 'active'
     );
 
-    const token =generateToken(updatedUser._id);
+    generateToken(res, updatedUser._id);
 
     res.status(200).json({
       _id: updatedUser._id,
       name: updatedUser.name,
       email: updatedUser.email,
       hasActiveSubscription: hasActiveSubscription,
-      token,
       message: 'Profile updated successfully',
     });
   } catch (error) {

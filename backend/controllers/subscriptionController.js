@@ -47,8 +47,8 @@ const checkoutSession = asyncHandler(async (req, res) => {
       ],
 
       mode: 'subscription',
-      success_url: 'https://flixxit-app-jfps.onrender.com', 
-      cancel_url: 'https://flixxit-app-jfps.onrender.com/subscribe', 
+      success_url: 'http://localhost:5173', 
+      cancel_url: 'http://localhost:5173/subscribe', 
       
       customer: user.stripeCustomerId
       
