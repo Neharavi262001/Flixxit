@@ -10,19 +10,19 @@ const Player = () => {
     const videos=[
     
         {
-            url: video1 || "https://youtu.be/LSdpASKfVGo?si=sgjCP_kWlNGWlbC9",
+            url:  "https://youtu.be/LSdpASKfVGo?si=sgjCP_kWlNGWlbC9" || video1,
             introDuration: 10, 
           },
           {
-            url: video2 || "https://youtu.be/UfPIUvCg3ps?si=SoAzbyjR-HqMm2tO",
+            url:  "https://youtu.be/UfPIUvCg3ps?si=SoAzbyjR-HqMm2tO" || video2 ,
             introDuration: 15,
           },
           {
-            url: video3 || "https://youtu.be/UP8d21vKvIU?si=JKarvnY8_NK_TECU",
+            url:  "https://youtu.be/UP8d21vKvIU?si=JKarvnY8_NK_TECU" || video3,
             introDuration: 10, 
           },
           {
-            url: video4 || "https://youtu.be/WCnIP_F8n3w?si=tpYy4VwQt33Wbwk1",
+            url:  "https://youtu.be/WCnIP_F8n3w?si=tpYy4VwQt33Wbwk1" || video4,
             introDuration: 15,
           },
     ]
