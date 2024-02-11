@@ -23,6 +23,7 @@
     "mongoose": "^8.1.1",
     "nodemon": "^3.0.3",
     "password-validator": "^5.3.0",
-    "stripe": "^14.16.0"
+    "stripe": "^14.16.0",
+    "vercel": "^33.5.0"
   }
 }
